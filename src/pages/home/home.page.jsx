@@ -7,7 +7,7 @@ import FormParams from '../form-params/formParams.page'
 const HomePage = () => {
   return (
     <Box className="home">
-      <Router>
+      <Router basename={window.location.pathname || ''}>
         <Switch>
           <Route exact path="/" component={FormParams} />
         </Switch>
