@@ -1,5 +1,7 @@
 @import "algo-params.css";
 @import "input-params.css";
+@import "./components/text.css";
+@import "./components/card.css";
 
 body {
   margin: 0;
@@ -57,15 +59,4 @@ code {
 
 .App-body {
   padding: 1vh 5vw;
-}
-
-.card-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.card {
-  flex: 1;
-  margin: 2.5vw;
 }
