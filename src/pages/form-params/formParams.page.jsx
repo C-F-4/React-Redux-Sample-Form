@@ -13,10 +13,10 @@ export class FormParams extends Component {
   render() {
     return (
       <Box className="card-container">
-        <Box className="card">
+        <Box className="card-wrapper">
           <InputParams></InputParams>
         </Box>
-        <Box className="card">
+        <Box className="card-wrapper">
           <AlgoParams></AlgoParams>
         </Box>
       </Box>
