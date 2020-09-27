@@ -11,7 +11,7 @@ function InputParams() {
             <TextField label="Index of Label Column" />
           </FormControl>
           <FormControl fullWidth={true}>
-            <FormLabel className="text-left">Automatic Cat. Column Flag</FormLabel>
+            <FormLabel className="text--leftt">Automatic Cat. Column Flag</FormLabel>
             <RadioGroup aria-label="auto-cat-column" name="autoCatColumn">
               <FormControlLabel value="yes" control={<Radio />} label="Yes" />
               <FormControlLabel value="no" control={<Radio />} label="No" />
