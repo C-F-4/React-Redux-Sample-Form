@@ -1,5 +1,6 @@
 import React from 'react'
-import { Card, CardHeader, CardContent, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField } from '@material-ui/core'
+import { Card, CardHeader, CardContent, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField, Tooltip } from '@material-ui/core'
+import { InfoRounded } from '@material-ui/icons'
 
 function InputParams() {
   return (
@@ -7,18 +8,27 @@ function InputParams() {
       <CardHeader title="Input Params" className="card--header"></CardHeader>
       <CardContent className="card--body">
         <form className="form--input-params" noValidate autoComplete="off">
-          <FormControl fullWidth={true}>
-            <TextField label="Index of Label Column" />
+          <FormControl fullWidth={true} margin="dense">
+            <TextField label="Index of Label Column" className="field--input" />
+            <Tooltip title="Info" aria-label="info">
+              <InfoRounded></InfoRounded>
+            </Tooltip>
           </FormControl>
-          <FormControl fullWidth={true}>
+          <FormControl fullWidth={true} margin="dense">
             <FormLabel className="text--left">Automatic Cat. Column Flag</FormLabel>
-            <RadioGroup aria-label="auto-cat-column" name="autoCatColumn">
+            <RadioGroup row aria-label="auto-cat-column" name="autoCatColumn" className="field--input">
               <FormControlLabel value="yes" control={<Radio />} label="Yes" />
               <FormControlLabel value="no" control={<Radio />} label="No" />
             </RadioGroup>
+            <Tooltip title="Info" aria-label="info">
+              <InfoRounded></InfoRounded>
+            </Tooltip>
           </FormControl>
-          <FormControl fullWidth={true}>
-            <TextField label="Categorical Columns" />
+          <FormControl fullWidth={true} margin="dense">
+            <TextField label="Categorical Columns" className="field--input" />
+            <Tooltip title="Info" aria-label="info">
+              <InfoRounded></InfoRounded>
+            </Tooltip>
           </FormControl>
         </form>
       </CardContent>
